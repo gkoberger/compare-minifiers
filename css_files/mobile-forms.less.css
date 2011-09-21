@@ -1,0 +1,95 @@
+.form-mobile {
+  padding: 1em;
+}
+.form-mobile label {
+  color: #666666;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  display: block;
+  padding-bottom: 6px;
+}
+.form-mobile label.check {
+  margin-bottom: 1em;
+}
+.form-mobile input[type=text],
+.form-mobile input[type=password],
+.form-mobile select,
+.form-mobile textarea {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+}
+.form-mobile textarea, .form-mobile input[type=text], .form-mobile input[type=password] {
+  border: 1px solid #ccc;
+  padding: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+.form-mobile .errorlist {
+  color: #c63717;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  margin-top: 1em;
+}
+.form-mobile .errorlist + p input, .form-mobile .errorlist + p textarea {
+  border-color: red;
+  background-color: #FFEBEB;
+}
+.form-mobile .stars {
+  background-image: url("../../img/icons/stars-big.png");
+}
+.form-mobile .stars label {
+  height: 40px;
+}
+.form-mobile .stars-0 {
+  background-position: -195px 50%;
+}
+.form-mobile .stars-1 {
+  background-position: -156px 50%;
+}
+.form-mobile .stars-2 {
+  background-position: -117px 50%;
+}
+.form-mobile .stars-3 {
+  background-position: -78px 50%;
+}
+.form-mobile .stars-4 {
+  background-position: -39px 50%;
+}
+.form-mobile .stars-5 {
+  background-position: 0px 50%;
+}
+.form-mobile .ratingwidget {
+  display: block;
+  float: none;
+  width: 195px;
+  margin-bottom: 1em;
+  height: 40px;
+}
+.form-mobile .ratingwidget input {
+  display: none;
+}
+.form-mobile .ratingwidget label {
+  text-indent: -5000px;
+  display: block;
+  float: left;
+  width: 39px;
+}
+#content .notification-box {
+  padding: 1em;
+  margin: 1em;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+#content .notification-box h2 {
+  margin: 0;
+}
+#content .notification-box.error {
+  background-color: #FFD5D5;
+}
