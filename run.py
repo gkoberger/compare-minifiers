@@ -18,10 +18,14 @@ def compile(compilers, folder):
             original = len(file.read())
 
         for c in compilers:
-            t0 = time.time()
             full_command = copy.copy(c[1])
-            full_command.append(("./%s/%s" % (folder, f)))
-            output = Popen(full_command, stdout=PIPE).communicate()
+            fname = ("./%s/%s" % (folder, f))
+            if "%s" in full_command:
+                full_command[full_command.index("%s")] = fname
+            else:
+                full_command.append(fname)
+            t0 = time.time()
+            output = Popen(full_command, stdout=PIPE, stderr = open('/dev/null', 'w')).communicate()
             t1 = time.time()
             t = t1 - t0
 
